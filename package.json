@@ -1,8 +1,8 @@
 {
   "name": "highlight-string-pattern",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Highlight a pattern in a string.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib dist",
     "build": "babel index.js --out-dir lib",
