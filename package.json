@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib dist",
-    "build": "babel index.js --out-dir lib",
+    "build": "babel index.js array.prototype.fill.js --out-dir lib",
     "build:umd": "webpack index.js dist/highlight-string-pattern.js && set NODE_ENV=production&& webpack index.js dist/highlight-string-pattern.min.js",
     "lint": "eslint index.js",
     "test": "echo \"Error: no test specified\" && exit 0",
