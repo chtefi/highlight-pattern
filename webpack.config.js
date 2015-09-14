@@ -29,7 +29,7 @@ module.exports = {
     }],
   },
   output: {
-    library: 'library-boilerplate',
+    library: 'highlight-string-pattern',
     libraryTarget: 'umd',
   },
   plugins: plugins,
