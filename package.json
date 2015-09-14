@@ -1,12 +1,12 @@
 {
-  "name": "highlight-pattern",
+  "name": "highlight-string-pattern",
   "version": "1.0.0",
   "description": "Highlight a pattern in a string.",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf lib dist",
     "build": "babel index.js --out-dir lib",
-    "build:umd": "webpack index.js dist/highlight-pattern.js && set NODE_ENV=production&& webpack index.js dist/highlight-pattern.min.js",
+    "build:umd": "webpack index.js dist/highlight-string-pattern.js && set NODE_ENV=production&& webpack index.js dist/highlight-string-pattern.min.js",
     "lint": "eslint index.js",
     "test": "echo \"Error: no test specified\" && exit 0",
     "prepublish": "npm run lint && npm run test && npm run clean && npm run build && npm run build:umd"
@@ -18,20 +18,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chtefi/highlight-pattern.git"
+    "url": "git+https://github.com/chtefi/highlight-string-pattern.git"
   },
   "author": "Stéphane DEROSIAUX",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chtefi/highlight-pattern/issues"
+    "url": "https://github.com/chtefi/highlight-string-pattern/issues"
   },
-  "homepage": "https://github.com/chtefi/highlight-pattern#readme",
-  "dependencies": {
+  "homepage": "https://github.com/chtefi/highlight-string-pattern#readme",
+  "devDependencies": {
     "babel": "^5.8.23",
     "rimraf": "^2.4.3",
-    "webpack": "^1.12.1"
-  },
-  "devDependencies": {
+    "webpack": "^1.12.1",
     "babel-core": "^5.8.24",
     "babel-loader": "^5.3.2",
     "eslint": "^1.4.1",
